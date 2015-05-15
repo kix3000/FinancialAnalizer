@@ -7,6 +7,7 @@ public class MainWindowController extends Stage{
 
     private Stage primaryStage;
     private MainSceneView mainSceneView;
+    private MainSceneController mainSceneController;
 
     public MainWindowController(Stage primaryStage) {
 
@@ -27,6 +28,7 @@ public class MainWindowController extends Stage{
 
         try {
             mainSceneView = new MainSceneView();
+            mainSceneController = new MainSceneController(mainSceneView, this);
 
         } catch (Exception e) {
             e.printStackTrace();
