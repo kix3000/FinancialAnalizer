@@ -7,7 +7,7 @@ public class MainSceneView extends Scene {
 
     public MainSceneView() throws Exception{
 
-        super(FXMLLoader.load(MainSceneView.class.getResource("MainSceneView.fxml")));
+        super(FXMLLoader.load(MainSceneView.class.getResource("/views/MainSceneView.fxml")),600,400);
     }
 
 }
