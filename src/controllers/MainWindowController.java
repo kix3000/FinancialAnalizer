@@ -15,7 +15,7 @@ public class MainWindowController extends Stage{
         this.primaryStage.setTitle("Financial Analizer v0.1");
         this.primaryStage.setOnCloseRequest(e -> closeProgram());
         initScenes();
-        this.primaryStage.setScene(mainSceneView);
+        this.primaryStage.setScene(mainSceneView.getScene());
         this.primaryStage.show();
 
     }
@@ -27,8 +27,10 @@ public class MainWindowController extends Stage{
     private void initScenes() {
 
         try {
-            mainSceneView = new MainSceneView();
+
             mainSceneController = new MainSceneController(mainSceneView, this);
+            mainSceneView = new MainSceneView(mainSceneController);
+
 
         } catch (Exception e) {
             e.printStackTrace();
