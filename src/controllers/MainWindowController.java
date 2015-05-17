@@ -31,7 +31,6 @@ public class MainWindowController extends Stage{
             mainSceneController = new MainSceneController(mainSceneView, this);
             mainSceneView = new MainSceneView(mainSceneController);
 
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -41,4 +40,5 @@ public class MainWindowController extends Stage{
     public static void closeProgram() {
         System.exit(0);
     }
+
 }

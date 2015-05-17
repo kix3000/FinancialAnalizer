@@ -14,7 +14,7 @@
                         <MenuItem text="Save"/>
                         <MenuItem text="Save As"/>
                         <SeparatorMenuItem  />
-                        <MenuItem text="Exit" />
+                        <MenuItem text="Exit" fx:id="exitMenuItem"/>
                     </items>
                 </Menu>
                 <Menu text="Edit">
@@ -27,7 +27,7 @@
                 <Menu text="View">
                     <items>
                         <MenuItem text="Expenses" fx:id="showExpensesMenuItem"/>
-                        <MenuItem text="Budgets"/>
+                        <MenuItem text="Budgets" fx:id="showBudgetsMenuItem"/>
                         <MenuItem text="Banks"/>
                     </items>
                 </Menu>

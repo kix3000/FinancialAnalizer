@@ -4,12 +4,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
 import java.net.URL;
 
-public class ShowExpensesView {
+
+public class ShowBudgetsView {
 
     private Pane pane;
-    private final static URL fxmlUrl = MainSceneView.class.getResource("/views/ShowExpensesView.fxml");
+    private final static URL fxmlUrl = MainSceneView.class.getResource("/views/ShowBudgetsView.fxml");
 
-    public ShowExpensesView(Object controller) throws Exception{
+    public ShowBudgetsView(Object controller) throws Exception{
 
         FXMLLoader loader = new FXMLLoader(fxmlUrl);
         loader.setController(controller);
