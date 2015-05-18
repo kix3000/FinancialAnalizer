@@ -1,8 +1,11 @@
 package controllers;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.BorderPane;
+import models.Expense;
 import views.MainBarView;
 import views.MainSceneView;
 import views.ShowBudgetsView;
@@ -16,6 +19,8 @@ public class MainSceneController implements Initializable{
     private MainSceneView mainSceneView;
     private MainBarView mainBarView;
 
+    private ShowExpensesView showExpensesView;
+
     private MainWindowController mainWindowController;
     private MainBarController mainBarController;
     private ShowExpensesController showExpensesController;
@@ -27,7 +32,7 @@ public class MainSceneController implements Initializable{
 
     }
 
-    public MainSceneController(MainSceneView mainSceneView, MainWindowController mainWindowController) {
+    public MainSceneController(MainSceneView mainSceneView, MainWindowController mainWindowController) throws Exception {
 
         this.mainSceneView = mainSceneView;
         this.mainWindowController = mainWindowController;
@@ -36,6 +41,7 @@ public class MainSceneController implements Initializable{
         showExpensesController = new ShowExpensesController();
         showBudgetsController = new ShowBudgetsController();
 
+        showExpensesView = new ShowExpensesView(showExpensesController);
     }
 
     @Override
@@ -53,11 +59,8 @@ public class MainSceneController implements Initializable{
 
     public void showExpensesView() {
 
-        try {
-           borderPane.setCenter(new ShowExpensesView(showExpensesController).getPane());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+           borderPane.setCenter(showExpensesView.getPane());
+
 
     }
 
@@ -67,5 +70,11 @@ public class MainSceneController implements Initializable{
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void TableTest() {
+        ObservableList<Expense> list = FXCollections.observableArrayList();
+        list.add(new Expense(2.41,"Lidl","Elo"));
+        showExpensesController.setData(list);
     }
 }

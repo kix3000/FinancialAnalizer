@@ -31,5 +31,12 @@
                         <MenuItem text="Banks"/>
                     </items>
                 </Menu>
+                <Menu text="Add">
+                    <items>
+                        <MenuItem text="Expenses" fx:id="addExpensesMenuItem"/>
+                        <MenuItem text="Budgets"/>
+                        <MenuItem text="Banks"/>
+                    </items>
+                </Menu>
             </menus>
         </MenuBar>
