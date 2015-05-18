@@ -26,7 +26,7 @@ public class MainBarController implements Initializable {
 
         showBudgetsMenuItem.setOnAction(e -> mainSceneController.showBudgetsView());
 
-        addExpensesMenuItem.setOnAction(e -> mainSceneController.TableTest());
+        addExpensesMenuItem.setOnAction(e -> mainSceneController.showAddExpensesWindow());
 
         exitMenuItem.setOnAction( e -> MainWindowController.closeProgram());
     }

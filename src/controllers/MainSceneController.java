@@ -26,6 +26,8 @@ public class MainSceneController implements Initializable{
     private ShowExpensesController showExpensesController;
     private ShowBudgetsController showBudgetsController;
 
+    private AddExpensesWindowController addExpensesWindowController;
+
     @FXML BorderPane borderPane;
 
     public MainSceneController() {
@@ -61,7 +63,6 @@ public class MainSceneController implements Initializable{
 
            borderPane.setCenter(showExpensesView.getPane());
 
-
     }
 
     public void showBudgetsView() {
@@ -69,6 +70,17 @@ public class MainSceneController implements Initializable{
             borderPane.setCenter(new ShowBudgetsView(showBudgetsController).getPane());
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    public void showAddExpensesWindow() {
+
+        if(addExpensesWindowController == null || addExpensesWindowController.isShowing() == false) {
+            try {
+                addExpensesWindowController = new AddExpensesWindowController();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 

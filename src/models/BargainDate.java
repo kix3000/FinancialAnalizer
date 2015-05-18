@@ -45,6 +45,8 @@ public class BargainDate extends Calendar {
 
     @Override
     public String toString() {
-        return "data";
+        return String.valueOf(this.get(this.DATE)) + "." + String.valueOf(this.get(this.MONTH)+1)+ "." + String.valueOf(this.get(this.YEAR));
     }
+
+
 }
