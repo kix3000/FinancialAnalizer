@@ -7,6 +7,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.collections.*?>
 
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 <GridPane alignment="CENTER" hgap="10.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml" fx:id="gridPane">
 
     <padding>
@@ -18,15 +19,30 @@
 
     <TableView GridPane.columnIndex="0" GridPane.rowIndex="1">
         <columns>
-            <TableColumn text="Date" fx:id="colDate"/>
-            <TableColumn text="Amount" fx:id="colAmount"/>
-            <TableColumn text="Place" fx:id="colPlace"/>
-            <TableColumn text="Description" fx:id="colDescription"/>
+            <TableColumn text="Date">
+                <cellValueFactory>
+                    <PropertyValueFactory property="date" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Amount">
+                <cellValueFactory>
+                    <PropertyValueFactory property="amount" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Place">
+                <cellValueFactory>
+                    <PropertyValueFactory property="place" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Description">
+                <cellValueFactory>
+                    <PropertyValueFactory property="description" />
+                </cellValueFactory>
+            </TableColumn>
         </columns>
         <items>
-            <FXCollections fx:factory="observableArrayList" fx:id="tablelist">
-
-            </FXCollections>
+            <FXCollections fx:factory="observableArrayList" fx:id="expensesTableData"/>
         </items>
     </TableView>
 
