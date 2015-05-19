@@ -17,7 +17,7 @@
     <Label style="-fx-font: NORMAL 20 Tahoma;" text="Address Book" GridPane.columnIndex="0" GridPane.rowIndex="0">
     </Label>
 
-    <TableView GridPane.columnIndex="0" GridPane.rowIndex="1">
+    <TableView GridPane.columnIndex="0" GridPane.rowIndex="1" fx:id="expensesTableView">
         <columns>
             <TableColumn text="Date">
                 <cellValueFactory>

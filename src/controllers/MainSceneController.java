@@ -27,6 +27,7 @@ public class MainSceneController implements Initializable{
     private ShowBudgetsController showBudgetsController;
 
     private AddExpensesWindowController addExpensesWindowController;
+    private ShowExpenseWindowController showExpenseWindowController;
 
     @FXML BorderPane borderPane;
 
@@ -40,7 +41,7 @@ public class MainSceneController implements Initializable{
         this.mainWindowController = mainWindowController;
 
         mainBarController = new MainBarController(this);
-        showExpensesController = new ShowExpensesController();
+        showExpensesController = new ShowExpensesController(this);
         showBudgetsController = new ShowBudgetsController();
 
         showExpensesView = new ShowExpensesView(showExpensesController);
@@ -78,6 +79,16 @@ public class MainSceneController implements Initializable{
         if(addExpensesWindowController == null || addExpensesWindowController.isShowing() == false) {
             try {
                 addExpensesWindowController = new AddExpensesWindowController(this);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void showExpenseWindow(Expense expense) {
+        if(showExpenseWindowController == null || showExpenseWindowController.isShowing() == false) {
+            try {
+                showExpenseWindowController = new ShowExpenseWindowController(this, expense);
             } catch (Exception e) {
                 e.printStackTrace();
             }
