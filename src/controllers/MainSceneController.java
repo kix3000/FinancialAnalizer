@@ -77,16 +77,17 @@ public class MainSceneController implements Initializable{
 
         if(addExpensesWindowController == null || addExpensesWindowController.isShowing() == false) {
             try {
-                addExpensesWindowController = new AddExpensesWindowController();
+                addExpensesWindowController = new AddExpensesWindowController(this);
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
     }
 
-    public void TableTest() {
+    public void addExpenseToTable(Expense expense){
         ObservableList<Expense> list = FXCollections.observableArrayList();
-        list.add(new Expense(2.41,"Lidl","Elo"));
+        list.add(expense);
         showExpensesController.setData(list);
     }
+
 }
