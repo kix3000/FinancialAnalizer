@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.BorderPane?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml" fx:id="borderPane">
-
-    <center>
-
+<GridPane alignment="CENTER" hgap="10.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml" fx:id="gridPane">
         <Label text="Show budgets!"/>
-
-    </center>
-
-</BorderPane>
+</GridPane>

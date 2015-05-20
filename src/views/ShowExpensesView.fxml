@@ -6,8 +6,8 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.collections.*?>
-
 <?import javafx.scene.control.cell.PropertyValueFactory?>
+
 <GridPane alignment="CENTER" hgap="10.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml" fx:id="gridPane">
 
     <padding>

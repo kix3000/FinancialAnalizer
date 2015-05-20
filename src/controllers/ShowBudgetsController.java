@@ -7,7 +7,10 @@ import java.util.ResourceBundle;
 
 public class ShowBudgetsController implements Initializable {
 
-    public ShowBudgetsController() {
+    private MainSceneController mainSceneController;
+
+    public ShowBudgetsController(MainSceneController mainSceneController) {
+        this.mainSceneController = mainSceneController;
     }
 
     @Override
