@@ -40,6 +40,7 @@ public class ShowExpensesController implements Initializable{
     }
 
     public void setData(ObservableList<Expense> ed){
+        expensesTableData.clear();
         expensesTableData.addAll(ed);
     }
 }

@@ -26,17 +26,17 @@ public class AddExpensesWindowController extends Stage {
         this.setOnCloseRequest(e -> this.close());
         this.setScene(addExpensesWindowView.getScene());
 
-        addExpenseButton.setOnAction( e-> addExpenseToTable());
+        addExpenseButton.setOnAction( e-> addExpenseToDatabase());
 
         this.show();
     }
 
-    private void addExpenseToTable() {
+    private void addExpenseToDatabase() {
 
         double amount = new Double(amountField.getText());
         String place = placeField.getText();
         String description = descriptionField.getText();
-        mainSceneController.addExpenseToTable(new Expense(amount,place,description));
+        mainSceneController.addExpenseToDatabase(new Expense(amount,place,description));
     }
 
 }
