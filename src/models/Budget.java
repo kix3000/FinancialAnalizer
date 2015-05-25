@@ -2,17 +2,21 @@ package models;
 
 import controllers.MainSceneController;
 
-import java.util.ArrayList;
-
 public class Budget {
 
     private MainSceneController mainSceneController;
 
+    private String description;
     private double totalExpended;
     private double plannedExpended;
 
-    public Budget(MainSceneController mainSceneController) {
+    public Budget(MainSceneController mainSceneController, String description) {
         this.mainSceneController = mainSceneController;
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public double getPlannedExpended() {
@@ -32,4 +36,5 @@ public class Budget {
         }
         return totalExpended;
     }
+
 }

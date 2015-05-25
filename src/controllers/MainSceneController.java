@@ -1,11 +1,10 @@
 package controllers;
 
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.BorderPane;
-import models.Budget;
+import models.BudgetsData;
 import models.Expense;
 import models.ExpenseDatabase;
 import views.MainBarView;
@@ -22,10 +21,10 @@ public class MainSceneController implements Initializable{
     private MainBarView mainBarView;
 
     private ExpenseDatabase expenseDatabase;
-
-    private Budget budget;
+    private BudgetsData budgetsData;
 
     private ShowExpensesView showExpensesView;
+    private ShowBudgetsView showBudgetsView;
 
     private MainWindowController mainWindowController;
     private MainBarController mainBarController;
@@ -34,7 +33,6 @@ public class MainSceneController implements Initializable{
 
     private AddExpensesWindowController addExpensesWindowController;
     private ShowExpenseWindowController showExpenseWindowController;
-
 
 
     @FXML BorderPane borderPane;
@@ -49,14 +47,15 @@ public class MainSceneController implements Initializable{
         this.mainWindowController = mainWindowController;
 
         expenseDatabase = new ExpenseDatabase(this);
+        budgetsData = new BudgetsData(this);
 
-        budget = new Budget(this);
 
         mainBarController = new MainBarController(this);
         showExpensesController = new ShowExpensesController(this);
         showBudgetsController = new ShowBudgetsController(this);
 
         showExpensesView = new ShowExpensesView(showExpensesController);
+        showBudgetsView = new ShowBudgetsView(showBudgetsController);
     }
 
     @Override
@@ -79,12 +78,9 @@ public class MainSceneController implements Initializable{
     }
 
     public void showBudgetsView() {
-        try {
-            borderPane.setCenter(new ShowBudgetsView(showBudgetsController).getPane());
-            System.out.println(budget.getTotalExpended());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
+            borderPane.setCenter(showBudgetsView.getPane());
+
     }
 
     public void showAddExpensesWindow() {
@@ -108,9 +104,15 @@ public class MainSceneController implements Initializable{
         }
     }
 
+    public void showAddBudgetsWindow() {
+        showBudgetsController.setData(budgetsData.getBudgetsFromDatabase());
+    }
+
     public void addExpenseToDatabase(Expense expense){
         expenseDatabase.addExpenseToDatabase(expense);
         showExpensesController.setData(expenseDatabase.getExpensesFromDatabase());
+
+        showBudgetsController.setData(budgetsData.getBudgetsFromDatabase());
     }
 
     public ObservableList<Expense> getExpensesFromDatabase(){

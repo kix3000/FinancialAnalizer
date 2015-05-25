@@ -34,7 +34,7 @@
                 <Menu text="Add">
                     <items>
                         <MenuItem text="Expenses" fx:id="addExpensesMenuItem"/>
-                        <MenuItem text="Budgets"/>
+                        <MenuItem text="Budgets" fx:id="addBudgetsMenuItem"/>
                         <MenuItem text="Banks"/>
                     </items>
                 </Menu>

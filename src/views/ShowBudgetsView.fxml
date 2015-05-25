@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 
 <GridPane alignment="CENTER" hgap="10.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml" fx:id="gridPane">
-        <Label text="Show budgets!"/>
+
+        <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </padding>
+
+        <Label style="-fx-font: NORMAL 20 Tahoma;" text="Budgets" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        </Label>
+
+        <TableView GridPane.columnIndex="0" GridPane.rowIndex="1" fx:id="budgetsTableView">
+                <columns>
+                        <TableColumn text="Description">
+                                <cellValueFactory>
+                                        <PropertyValueFactory property="description" />
+                                </cellValueFactory>
+                        </TableColumn>
+
+                        <TableColumn text="Total expended">
+                                <cellValueFactory>
+                                        <PropertyValueFactory property="totalExpended" />
+                                </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Planned expends">
+                                <cellValueFactory>
+                                        <PropertyValueFactory property="plannedExpended" />
+                                </cellValueFactory>
+                        </TableColumn>
+                </columns>
+                <items>
+                        <FXCollections fx:factory="observableArrayList" fx:id="budgetsTableData"/>
+                </items>
+        </TableView>
+
 </GridPane>
