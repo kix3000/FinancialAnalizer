@@ -9,8 +9,8 @@ import views.AddExpensesWindowView;
 
 public class AddExpensesWindowController extends Stage {
 
-    MainSceneController mainSceneController;
-    AddExpensesWindowView addExpensesWindowView;
+    private MainSceneController mainSceneController;
+    private AddExpensesWindowView addExpensesWindowView;
 
     @FXML private Button addExpenseButton;
     @FXML private TextField amountField;

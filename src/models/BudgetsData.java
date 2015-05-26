@@ -14,9 +14,11 @@ public class BudgetsData {
         this.mainSceneController = mainSceneController;
 
         budgetsDatabase = FXCollections.observableArrayList();
-        budgetsDatabase.add(new Budget(mainSceneController, "Main Budget"));
     }
 
+    public void addBudget(Budget budget) {
+        budgetsDatabase.add(budget);
+    }
 
     public ObservableList<Budget> getBudgetsFromDatabase() {
         return budgetsDatabase;

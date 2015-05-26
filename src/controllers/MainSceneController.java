@@ -4,6 +4,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.BorderPane;
+import models.Budget;
 import models.BudgetsData;
 import models.Expense;
 import models.ExpenseDatabase;
@@ -32,6 +33,7 @@ public class MainSceneController implements Initializable{
     private ShowBudgetsController showBudgetsController;
 
     private AddExpensesWindowController addExpensesWindowController;
+    private AddBudgetsWindowController addBudgetsWindowController;
     private ShowExpenseWindowController showExpenseWindowController;
 
 
@@ -105,7 +107,14 @@ public class MainSceneController implements Initializable{
     }
 
     public void showAddBudgetsWindow() {
-        showBudgetsController.setData(budgetsData.getBudgetsFromDatabase());
+
+        if(addBudgetsWindowController == null || addBudgetsWindowController.isShowing() == false) {
+            try {
+                addBudgetsWindowController = new AddBudgetsWindowController(this);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public void addExpenseToDatabase(Expense expense){
@@ -118,4 +127,10 @@ public class MainSceneController implements Initializable{
     public ObservableList<Expense> getExpensesFromDatabase(){
         return expenseDatabase.getExpensesFromDatabase();
     }
+
+    public void addBudget(Budget budget){
+        budgetsData.addBudget(budget);
+        showBudgetsController.setData(budgetsData.getBudgetsFromDatabase());
+    }
+
 }
