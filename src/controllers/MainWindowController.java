@@ -1,12 +1,13 @@
 package controllers;
 
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import views.MainSceneView;
+import views.FxmlFileLoader;
 
 public class MainWindowController extends Stage{
 
     private Stage primaryStage;
-    private MainSceneView mainSceneView;
+    private FxmlFileLoader<Pane> mainSceneView;
     private MainSceneController mainSceneController;
 
     public MainWindowController(Stage primaryStage) {
@@ -29,7 +30,7 @@ public class MainWindowController extends Stage{
         try {
 
             mainSceneController = new MainSceneController(mainSceneView, this);
-            mainSceneView = new MainSceneView(mainSceneController);
+            mainSceneView = new FxmlFileLoader<Pane>(mainSceneController,"/views/MainSceneView.fxml",600,400);
 
         } catch (Exception e) {
             e.printStackTrace();

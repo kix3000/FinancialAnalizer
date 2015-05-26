@@ -1,15 +1,16 @@
 package controllers;
 
 import javafx.fxml.FXML;
+import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import models.Expense;
-import views.ShowExpenseWindowView;
+import views.FxmlFileLoader;
 
 public class ShowExpenseWindowController extends Stage {
 
-    MainSceneController mainSceneController;
-    ShowExpenseWindowView showExpenseWindowView;
+    private MainSceneController mainSceneController;
+    private FxmlFileLoader<Pane> showExpenseWindowView;
 
     @FXML Text amountField;
     @FXML Text placeField;
@@ -19,7 +20,8 @@ public class ShowExpenseWindowController extends Stage {
         super();
 
         this.mainSceneController = mainSceneController;
-        showExpenseWindowView = new ShowExpenseWindowView(this);
+        showExpenseWindowView = new FxmlFileLoader<Pane>(this,"/views/ShowExpenseWindowView.fxml",300,200);
+
         this.setTitle("Show expense");
         this.setOnCloseRequest(e -> this.close());
 

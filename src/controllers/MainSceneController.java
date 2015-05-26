@@ -3,29 +3,29 @@ package controllers;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.MenuBar;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 import models.Budget;
 import models.BudgetsData;
 import models.Expense;
 import models.ExpenseDatabase;
-import views.MainBarView;
-import views.MainSceneView;
-import views.ShowBudgetsView;
-import views.ShowExpensesView;
+import views.*;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
 
 public class MainSceneController implements Initializable{
 
-    private MainSceneView mainSceneView;
-    private MainBarView mainBarView;
+    private FxmlFileLoader<Pane> mainSceneView;
 
     private ExpenseDatabase expenseDatabase;
     private BudgetsData budgetsData;
 
-    private ShowExpensesView showExpensesView;
-    private ShowBudgetsView showBudgetsView;
+    private FxmlFileLoader<MenuBar> mainBarView;
+    private FxmlFileLoader<Pane> showExpensesView;
+    private FxmlFileLoader<Pane> showBudgetsView;
 
     private MainWindowController mainWindowController;
     private MainBarController mainBarController;
@@ -36,14 +36,13 @@ public class MainSceneController implements Initializable{
     private AddBudgetsWindowController addBudgetsWindowController;
     private ShowExpenseWindowController showExpenseWindowController;
 
-
     @FXML BorderPane borderPane;
 
     public MainSceneController() {
 
     }
 
-    public MainSceneController(MainSceneView mainSceneView, MainWindowController mainWindowController) throws Exception {
+    public MainSceneController(FxmlFileLoader<Pane> mainSceneView, MainWindowController mainWindowController) throws Exception {
 
         this.mainSceneView = mainSceneView;
         this.mainWindowController = mainWindowController;
@@ -51,13 +50,12 @@ public class MainSceneController implements Initializable{
         expenseDatabase = new ExpenseDatabase(this);
         budgetsData = new BudgetsData(this);
 
-
         mainBarController = new MainBarController(this);
         showExpensesController = new ShowExpensesController(this);
         showBudgetsController = new ShowBudgetsController(this);
 
-        showExpensesView = new ShowExpensesView(showExpensesController);
-        showBudgetsView = new ShowBudgetsView(showBudgetsController);
+        showExpensesView = new FxmlFileLoader<Pane>(showExpensesController,"/views/ShowExpensesView.fxml");
+        showBudgetsView = new FxmlFileLoader<Pane>(showBudgetsController,"/views/ShowBudgetsView.fxml");
     }
 
     @Override
@@ -65,8 +63,8 @@ public class MainSceneController implements Initializable{
 
         if(mainBarView == null)
         try {
-            mainBarView = new MainBarView(mainBarController);
-            borderPane.setTop(mainBarView.getPane());
+            mainBarView = new FxmlFileLoader<MenuBar>(mainBarController,"/views/MainBarView.fxml");
+            borderPane.setTop(mainBarView.getObject());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -75,13 +73,13 @@ public class MainSceneController implements Initializable{
 
     public void showExpensesView() {
 
-           borderPane.setCenter(showExpensesView.getPane());
+        borderPane.setCenter(showExpensesView.getObject());
 
     }
 
     public void showBudgetsView() {
 
-            borderPane.setCenter(showBudgetsView.getPane());
+        borderPane.setCenter(showBudgetsView.getObject());
 
     }
 

@@ -3,14 +3,15 @@ package controllers;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import models.Budget;
-import views.AddBudgetsWindowView;
+import views.FxmlFileLoader;
 
 public class AddBudgetsWindowController extends Stage {
 
     private MainSceneController mainSceneController;
-    private AddBudgetsWindowView addBudgetsWindowView;
+    private FxmlFileLoader<Pane> addBudgetsWindowView;
 
     @FXML private Button addBudgetButton;
     @FXML private TextField descriptionField;
@@ -20,7 +21,7 @@ public class AddBudgetsWindowController extends Stage {
         super();
 
         this.mainSceneController = mainSceneController;
-        addBudgetsWindowView = new AddBudgetsWindowView(this);
+        addBudgetsWindowView = new FxmlFileLoader<Pane>(this,"/views/AddBudgetsWindowView.fxml",300,200);
 
         this.setTitle("Add new budget");
         this.setOnCloseRequest(e -> this.close());

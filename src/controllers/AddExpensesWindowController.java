@@ -3,14 +3,15 @@ package controllers;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import models.Expense;
-import views.AddExpensesWindowView;
+import views.FxmlFileLoader;
 
 public class AddExpensesWindowController extends Stage {
 
     private MainSceneController mainSceneController;
-    private AddExpensesWindowView addExpensesWindowView;
+    private FxmlFileLoader<Pane> addExpensesWindowView;
 
     @FXML private Button addExpenseButton;
     @FXML private TextField amountField;
@@ -21,7 +22,7 @@ public class AddExpensesWindowController extends Stage {
         super();
 
         this.mainSceneController = mainSceneController;
-        addExpensesWindowView = new AddExpensesWindowView(this);
+        addExpensesWindowView = new FxmlFileLoader<Pane>(this,"/views/AddExpensesWindowView.fxml",300,200);
         this.setTitle("Add new expense");
         this.setOnCloseRequest(e -> this.close());
         this.setScene(addExpensesWindowView.getScene());
