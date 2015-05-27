@@ -1,4 +1,6 @@
-package models;
+package models.bargains;
+
+import models.BargainDate;
 
 import java.util.Calendar;
 

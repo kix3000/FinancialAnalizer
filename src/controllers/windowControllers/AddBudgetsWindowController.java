@@ -1,5 +1,6 @@
-package controllers;
+package controllers.windowControllers;
 
+import controllers.MainSceneController;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -39,6 +40,6 @@ public class AddBudgetsWindowController extends Stage {
         Budget newBudget = new Budget(mainSceneController, description);
         newBudget.setPlannedExpended(planned);
 
-        mainSceneController.addBudget(newBudget);
+        mainSceneController.addBudgetToDatabase(newBudget);
     }
 }

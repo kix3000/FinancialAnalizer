@@ -1,6 +1,7 @@
 package models;
 
 import controllers.MainSceneController;
+import models.bargains.Expense;
 
 public class Budget {
 
@@ -31,7 +32,7 @@ public class Budget {
 
         totalExpended = 0;
 
-        for (Expense expense : mainSceneController.getExpensesFromDatabase()){
+        for (Expense expense : mainSceneController.getProgramDatabase().getExpensesFromDatabase()){
             totalExpended += expense.getAmount();
         }
         return totalExpended;

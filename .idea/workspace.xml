@@ -2,34 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c560604-1a6b-43df-a023-2c8695eb69cb" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\views\AddBudgetsWindowView.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\views\AddExpensesWindowView.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\views\MainBarView.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\views\MainSceneView.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\views\ShowBudgetsView.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\views\ShowExpenseWindowView.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\views\ShowExpensesView.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\views\AddBudgetsWindowView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\views\AddExpensesWindowView.fxml" afterPath="" />
-      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\views\AddExpensesWindowView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\views\MainBarView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\views\MainSceneView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\views\ShowBudgetsView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\views\ShowExpenseWindowView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\views\ShowExpensesView.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FinancialAnalizer/controllers/AddBudgetsWindowController.class" afterPath="$PROJECT_DIR$/out/production/FinancialAnalizer/controllers/AddBudgetsWindowController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FinancialAnalizer/controllers/AddExpensesWindowController.class" afterPath="$PROJECT_DIR$/out/production/FinancialAnalizer/controllers/AddExpensesWindowController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FinancialAnalizer/controllers/MainBarController.class" afterPath="$PROJECT_DIR$/out/production/FinancialAnalizer/controllers/MainBarController.class" />
+      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\controllers\AddBudgetsWindowController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\controllers\AddExpensesWindowController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\controllers\MainBarController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\controllers\ShowBudgetsController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\controllers\ShowExpenseWindowController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\controllers\ShowExpensesController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\models\Bargain.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\models\BudgetsData.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\models\Expense.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\models\ExpenseDatabase.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\models\Income.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\models\BudgetsData.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\models\ExpenseDatabase.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\models\Budget.class" afterPath="D:\workspace\intelij\FinancialAnalizer\out\production\FinancialAnalizer\models\Budget.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FinancialAnalizer/controllers/MainSceneController.class" afterPath="$PROJECT_DIR$/out/production/FinancialAnalizer/controllers/MainSceneController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FinancialAnalizer/controllers/MainWindowController.class" afterPath="$PROJECT_DIR$/out/production/FinancialAnalizer/controllers/MainWindowController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FinancialAnalizer/controllers/ShowExpenseWindowController.class" afterPath="$PROJECT_DIR$/out/production/FinancialAnalizer/controllers/ShowExpenseWindowController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FinancialAnalizer/controllers/ShowExpensesController.class" afterPath="$PROJECT_DIR$/out/production/FinancialAnalizer/controllers/ShowExpensesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/AddBudgetsWindowController.java" afterPath="$PROJECT_DIR$/src/controllers/AddBudgetsWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/AddExpensesWindowController.java" afterPath="$PROJECT_DIR$/src/controllers/AddExpensesWindowController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/Budget.java" afterPath="$PROJECT_DIR$/src/models/Budget.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/MainSceneController.java" afterPath="$PROJECT_DIR$/src/controllers/MainSceneController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/MainWindowController.java" afterPath="$PROJECT_DIR$/src/controllers/MainWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/ShowExpenseWindowController.java" afterPath="$PROJECT_DIR$/src/controllers/ShowExpenseWindowController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/MainSceneView.fxml" afterPath="$PROJECT_DIR$/src/views/MainSceneView.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\controllers\AddBudgetsWindowController.java" afterPath="$PROJECT_DIR$/src/controllers/windowControllers/AddBudgetsWindowController.java" />
+      <change type="MOVED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\controllers\AddExpensesWindowController.java" afterPath="$PROJECT_DIR$/src/controllers/windowControllers/AddExpensesWindowController.java" />
+      <change type="MOVED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\controllers\MainBarController.java" afterPath="$PROJECT_DIR$/src/controllers/scenesControllers/MainBarController.java" />
+      <change type="MOVED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\controllers\ShowBudgetsController.java" afterPath="$PROJECT_DIR$/src/controllers/scenesControllers/ShowBudgetsController.java" />
+      <change type="MOVED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\controllers\ShowExpenseWindowController.java" afterPath="$PROJECT_DIR$/src/controllers/windowControllers/ShowExpenseWindowController.java" />
+      <change type="MOVED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\controllers\ShowExpensesController.java" afterPath="$PROJECT_DIR$/src/controllers/scenesControllers/ShowExpensesController.java" />
+      <change type="MOVED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\models\Bargain.java" afterPath="$PROJECT_DIR$/src/models/bargains/Bargain.java" />
+      <change type="MOVED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\models\Expense.java" afterPath="$PROJECT_DIR$/src/models/bargains/Expense.java" />
+      <change type="MOVED" beforePath="D:\workspace\intelij\FinancialAnalizer\src\models\Income.java" afterPath="$PROJECT_DIR$/src/models/bargains/Income.java" />
     </list>
     <ignored path="FinancialAnalizer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,11 +54,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FxmlFileLoader.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/views/FxmlFileLoader.java">
+      <file leaf-file-name="MainWindowController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controllers/MainWindowController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63254595">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state vertical-scroll-proportion="-0.76115483">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,30 +107,31 @@
         <option value="$PROJECT_DIR$/src/models/Expense.java" />
         <option value="$PROJECT_DIR$/src/models/Bargain.java" />
         <option value="$PROJECT_DIR$/src/models/BargainDate.java" />
-        <option value="$PROJECT_DIR$/src/views/MainSceneView.fxml" />
         <option value="$PROJECT_DIR$/src/views/AddExpensesWindowView.java" />
         <option value="$PROJECT_DIR$/src/views/AddExpensesWindowView.fxml" />
         <option value="$PROJECT_DIR$/src/views/ShowExpenseWindowView.fxml" />
         <option value="$PROJECT_DIR$/src/views/ShowExpenseWindowView.java" />
-        <option value="$PROJECT_DIR$/src/models/ExpenseDatabase.java" />
         <option value="$PROJECT_DIR$/src/controllers/ShowExpensesController.java" />
         <option value="$PROJECT_DIR$/src/views/ShowExpensesView.fxml" />
         <option value="$PROJECT_DIR$/src/views/ShowBudgetsView.fxml" />
         <option value="$PROJECT_DIR$/src/views/MainBarView.fxml" />
         <option value="$PROJECT_DIR$/src/controllers/MainBarController.java" />
         <option value="$PROJECT_DIR$/src/controllers/ShowBudgetsController.java" />
-        <option value="$PROJECT_DIR$/src/models/Budget.java" />
         <option value="$PROJECT_DIR$/src/views/AddBudgetsWindowView.java" />
         <option value="$PROJECT_DIR$/src/views/AddBudgetsWindowView.fxml" />
-        <option value="$PROJECT_DIR$/src/models/BudgetsData.java" />
         <option value="$PROJECT_DIR$/src/views/FxmlPaneLoader.java" />
         <option value="$PROJECT_DIR$/src/views/FxmlLoader.java" />
         <option value="$PROJECT_DIR$/src/controllers/AddExpensesWindowController.java" />
         <option value="$PROJECT_DIR$/src/controllers/AddBudgetsWindowController.java" />
         <option value="$PROJECT_DIR$/src/controllers/ShowExpenseWindowController.java" />
-        <option value="$PROJECT_DIR$/src/controllers/MainSceneController.java" />
         <option value="$PROJECT_DIR$/src/controllers/MainWindowController.java" />
         <option value="$PROJECT_DIR$/src/views/FxmlFileLoader.java" />
+        <option value="$PROJECT_DIR$/src/models/BudgetsData.java" />
+        <option value="$PROJECT_DIR$/src/models/ExpenseDatabase.java" />
+        <option value="$PROJECT_DIR$/src/models/ProgramDatabase.java" />
+        <option value="$PROJECT_DIR$/src/views/MainSceneView.fxml" />
+        <option value="$PROJECT_DIR$/src/models/Budget.java" />
+        <option value="$PROJECT_DIR$/src/controllers/MainSceneController.java" />
       </list>
     </option>
   </component>
@@ -166,7 +167,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -250,13 +250,80 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bargains" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FinancialAnalizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FinancialAnalizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FinancialAnalizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FinancialAnalizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="windowControllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FinancialAnalizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FinancialAnalizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scenesControllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -476,7 +543,6 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -491,9 +557,10 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -519,6 +586,26 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/views/FxmlFileLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/FxmlFileLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/MainWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -535,6 +622,8 @@
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2624#2625#0" expanded="true" />
+            <element signature="e#2662#2663#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -545,6 +634,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2624#2625#0" expanded="true" />
+            <element signature="e#2662#2663#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -555,19 +646,21 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2624#2625#0" expanded="true" />
+            <element signature="e#2662#2663#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/MainSceneView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/MainSceneController.java">
@@ -576,6 +669,8 @@
           <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2624#2625#0" expanded="true" />
+            <element signature="e#2662#2663#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -598,14 +693,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/MainSceneView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/MainWindowController.java">
@@ -653,64 +748,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Income.java">
+    <entry file="file://$PROJECT_DIR$/src/models/bargains/Income.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/BargainDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63254595">
-          <caret line="47" column="96" selection-start-line="47" selection-start-column="96" selection-end-line="47" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Bargain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55380577">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/MainSceneView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1724138">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Expense.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17847769">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/ShowExpensesView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="12.896552">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="8" selection-end-column="57" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/ShowExpensesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0892389">
-          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
@@ -727,131 +780,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/ShowBudgetsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/AddBudgetsWindowView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.448276">
           <caret line="20" column="78" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="78" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Budget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0446194">
-          <caret line="33" column="62" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/ExpenseDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5091863">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/BudgetsData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4199475">
-          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/MainBarView.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/MainBarView.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6630435">
           <caret line="36" column="74" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="74" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/MainBarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5091863">
-          <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ShowExpenseWindowView.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/ShowExpenseWindowView.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7244318">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="25" selection-end-column="85" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ShowBudgetsView.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/ShowBudgetsView.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.4346591">
           <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/AddExpensesWindowController.java">
+    <entry file="file://$PROJECT_DIR$/src/models/bargains/Expense.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="107" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.11703958">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/ShowExpenseWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5800525">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/MainSceneController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="65" selection-start-line="44" selection-start-column="65" selection-end-line="44" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/AddBudgetsWindowController.java">
+    <entry file="file://$PROJECT_DIR$/src/controllers/windowControllers/AddBudgetsWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="105" />
@@ -861,10 +842,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/MainWindowController.java">
+    <entry file="file://$PROJECT_DIR$/src/controllers/windowControllers/AddExpensesWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.2685026">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="107" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -873,8 +854,111 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/FxmlFileLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63254595">
+        <state vertical-scroll-proportion="0.0">
           <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/MainSceneController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68766403">
+          <caret line="124" column="35" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2624#2625#0" expanded="true" />
+            <element signature="e#2662#2663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/MainSceneView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19318181">
+          <caret line="4" column="72" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/ProgramDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/windowControllers/ShowExpenseWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.22309712">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/scenesControllers/ShowExpensesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0288714">
+          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/scenesControllers/MainBarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5091863">
+          <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/scenesControllers/ShowBudgetsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4461942">
+          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Budget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68766403">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/BargainDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1784776">
+          <caret line="47" column="96" selection-start-line="47" selection-start-column="96" selection-end-line="47" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/bargains/Bargain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19685039">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/MainWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.76115483">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

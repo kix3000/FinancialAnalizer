@@ -1,4 +1,4 @@
-package models;
+package models.bargains;
 
 public class Income extends Bargain
 {

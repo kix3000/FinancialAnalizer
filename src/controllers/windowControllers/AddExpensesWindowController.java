@@ -1,11 +1,12 @@
-package controllers;
+package controllers.windowControllers;
 
+import controllers.MainSceneController;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import models.Expense;
+import models.bargains.Expense;
 import views.FxmlFileLoader;
 
 public class AddExpensesWindowController extends Stage {

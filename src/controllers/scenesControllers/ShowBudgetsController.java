@@ -1,12 +1,11 @@
-package controllers;
+package controllers.scenesControllers;
 
+import controllers.MainSceneController;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import models.Budget;
-import models.Expense;
 
 import java.net.URL;
 import java.util.ResourceBundle;
