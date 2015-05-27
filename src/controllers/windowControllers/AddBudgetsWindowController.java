@@ -3,6 +3,7 @@ package controllers.windowControllers;
 import controllers.MainSceneController;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -17,6 +18,8 @@ public class AddBudgetsWindowController extends Stage {
     @FXML private Button addBudgetButton;
     @FXML private TextField descriptionField;
     @FXML private TextField plannedField;
+    @FXML private CheckBox isFiltredByPlaceField;
+    @FXML private TextField placeFiltrField;
 
     public AddBudgetsWindowController(MainSceneController mainSceneController) throws Exception{
         super();
@@ -37,8 +40,15 @@ public class AddBudgetsWindowController extends Stage {
 
         double planned = new Double(plannedField.getText());
         String description = descriptionField.getText();
+        Boolean isFiltredByPlace = isFiltredByPlaceField.isSelected();
+        String placeFiltr = placeFiltrField.getText();
+
         Budget newBudget = new Budget(mainSceneController, description);
         newBudget.setPlannedExpended(planned);
+
+        if(isFiltredByPlace) {
+            newBudget.setFiltrByPlace(placeFiltr);
+        }
 
         mainSceneController.addBudgetToDatabase(newBudget);
     }

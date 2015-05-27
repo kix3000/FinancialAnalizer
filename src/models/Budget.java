@@ -11,17 +11,19 @@ public class Budget {
     private double totalExpended;
     private double plannedExpended;
 
+    private String placeFiltr;
+
     public Budget(MainSceneController mainSceneController, String description) {
         this.mainSceneController = mainSceneController;
         this.description = description;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
     public double getPlannedExpended() {
         return plannedExpended;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public void setPlannedExpended(double plannedExpended) {
@@ -33,9 +35,24 @@ public class Budget {
         totalExpended = 0;
 
         for (Expense expense : mainSceneController.getProgramDatabase().getExpensesFromDatabase()){
-            totalExpended += expense.getAmount();
+
+            if(placeFiltr == null){
+                totalExpended += expense.getAmount();
+            }
+            else if(placeFiltr != null && expense.getPlace().equals(placeFiltr)){
+                totalExpended += expense.getAmount();
+            }
+
         }
+
         return totalExpended;
     }
 
+    public void setFiltrByPlace(String placeFiltr) {
+        this.placeFiltr = placeFiltr;
+    }
+
+    public String getFiltrByPlace() {
+        return placeFiltr;
+    }
 }
