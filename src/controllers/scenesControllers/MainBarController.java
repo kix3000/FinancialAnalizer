@@ -15,8 +15,10 @@ public class MainBarController implements Initializable {
     @FXML private MenuItem exitMenuItem;
     @FXML private MenuItem showBudgetsMenuItem;
     @FXML private MenuItem showExpensesMenuItem;
+    @FXML private MenuItem showBanksMenuItem;
     @FXML private MenuItem addExpensesMenuItem;
     @FXML private MenuItem addBudgetsMenuItem;
+    @FXML private MenuItem addBanksMenuItem;
 
     public MainBarController(MainSceneController mainSceneController){
         this.mainSceneController = mainSceneController;
@@ -29,9 +31,13 @@ public class MainBarController implements Initializable {
 
         showBudgetsMenuItem.setOnAction(e -> mainSceneController.showBudgetsView());
 
+        showBanksMenuItem.setOnAction(e -> mainSceneController.setShowBanksView());
+
         addExpensesMenuItem.setOnAction(e -> mainSceneController.showAddExpensesWindow());
 
         addBudgetsMenuItem.setOnAction(e -> mainSceneController.showAddBudgetsWindow());
+
+        addBanksMenuItem.setOnAction(e -> mainSceneController.showAddBanksWindow());
 
         exitMenuItem.setOnAction( e -> MainWindowController.closeProgram());
     }

@@ -19,10 +19,16 @@
     <Text
             GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="placeField"/>
 
-    <Label text="Description:"
+    <Label text="Payment Method:"
            GridPane.columnIndex="0" GridPane.rowIndex="2"/>
 
     <Text
-            GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="descriptionField"/>
+            GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="paymentMethodField"/>
+
+    <Label text="Description:"
+           GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+
+    <Text
+            GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="descriptionField"/>
 
 </GridPane>

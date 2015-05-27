@@ -15,6 +15,7 @@ public class ShowExpenseWindowController extends Stage {
 
     @FXML Text amountField;
     @FXML Text placeField;
+    @FXML Text paymentMethodField;
     @FXML Text descriptionField;
 
     public ShowExpenseWindowController(MainSceneController mainSceneController, Expense expense) throws Exception{
@@ -28,6 +29,7 @@ public class ShowExpenseWindowController extends Stage {
 
         amountField.setText(String.valueOf(expense.getAmount()));
         placeField.setText(expense.getPlace());
+        paymentMethodField.setText(expense.getPaymentMethod());
         descriptionField.setText(expense.getDescription());
 
         this.setScene(showExpenseWindowView.getScene());

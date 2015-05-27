@@ -1,8 +1,10 @@
 package controllers.windowControllers;
 
 import controllers.MainSceneController;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -18,6 +20,8 @@ public class AddExpensesWindowController extends Stage {
     @FXML private TextField amountField;
     @FXML private TextField placeField;
     @FXML private TextField descriptionField;
+    @FXML private ChoiceBox paymentMethodField;
+    @FXML private ObservableList<String> paymentMethods;
 
     public AddExpensesWindowController(MainSceneController mainSceneController) throws Exception{
         super();
@@ -28,6 +32,7 @@ public class AddExpensesWindowController extends Stage {
         this.setOnCloseRequest(e -> this.close());
         this.setScene(addExpensesWindowView.getScene());
 
+        paymentMethods.addAll(mainSceneController.getProgramDatabase().getPaymentMethodsFromDatabase());
         addExpenseButton.setOnAction( e-> addExpenseToDatabase());
 
         this.show();
@@ -38,7 +43,9 @@ public class AddExpensesWindowController extends Stage {
         double amount = new Double(amountField.getText());
         String place = placeField.getText();
         String description = descriptionField.getText();
-        mainSceneController.addExpenseToDatabase(new Expense(amount,place,description));
+        String paymentMethod = (String)paymentMethodField.getValue();
+
+        mainSceneController.addExpenseToDatabase(new Expense(amount,place,paymentMethod,description));
     }
 
 }

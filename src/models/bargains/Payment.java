@@ -5,14 +5,14 @@ import models.BargainDate;
 import java.util.Calendar;
 
 
-public abstract class Bargain {
+public abstract class Payment {
 
     private BargainDate date;
     private double amount;
     private String place;
     private String description;
 
-    public Bargain(double amount, String place, String description) {
+    public Payment(double amount, String place, String description) {
         date = new BargainDate();
         date.set(2015,Calendar.JULY,27);
 

@@ -35,6 +35,11 @@
                     <PropertyValueFactory property="place" />
                 </cellValueFactory>
             </TableColumn>
+            <TableColumn text="Payment Method">
+                <cellValueFactory>
+                    <PropertyValueFactory property="paymentMethod" />
+                </cellValueFactory>
+            </TableColumn>
             <TableColumn text="Description">
                 <cellValueFactory>
                     <PropertyValueFactory property="description" />

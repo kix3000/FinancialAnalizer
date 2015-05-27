@@ -28,14 +28,14 @@
                     <items>
                         <MenuItem text="Expenses" fx:id="showExpensesMenuItem"/>
                         <MenuItem text="Budgets" fx:id="showBudgetsMenuItem"/>
-                        <MenuItem text="Banks"/>
+                        <MenuItem text="Banks" fx:id="showBanksMenuItem"/>
                     </items>
                 </Menu>
                 <Menu text="Add">
                     <items>
                         <MenuItem text="Expenses" fx:id="addExpensesMenuItem"/>
                         <MenuItem text="Budgets" fx:id="addBudgetsMenuItem"/>
-                        <MenuItem text="Banks"/>
+                        <MenuItem text="Banks" fx:id="addBanksMenuItem"/>
                     </items>
                 </Menu>
             </menus>

@@ -1,8 +1,10 @@
 package controllers;
 
 import controllers.scenesControllers.MainBarController;
+import controllers.scenesControllers.ShowBanksController;
 import controllers.scenesControllers.ShowBudgetsController;
 import controllers.scenesControllers.ShowExpensesController;
+import controllers.windowControllers.AddBanksWindowController;
 import controllers.windowControllers.AddBudgetsWindowController;
 import controllers.windowControllers.AddExpensesWindowController;
 import controllers.windowControllers.ShowExpenseWindowController;
@@ -27,15 +29,18 @@ public class MainSceneController implements Initializable{
     private FxmlFileLoader<MenuBar> mainBarView;
     private FxmlFileLoader<Pane> showExpensesView;
     private FxmlFileLoader<Pane> showBudgetsView;
+    private FxmlFileLoader<Pane> showBanksView;
 
     private MainWindowController mainWindowController;
     private MainBarController mainBarController;
     private ShowExpensesController showExpensesController;
     private ShowBudgetsController showBudgetsController;
+    private ShowBanksController showBanksController;
 
     private AddExpensesWindowController addExpensesWindowController;
     private AddBudgetsWindowController addBudgetsWindowController;
     private ShowExpenseWindowController showExpenseWindowController;
+    private AddBanksWindowController addBanksWindowController;
 
     @FXML BorderPane mainSceneBorderPane;
 
@@ -49,9 +54,11 @@ public class MainSceneController implements Initializable{
         mainBarController = new MainBarController(this);
         showExpensesController = new ShowExpensesController(this);
         showBudgetsController = new ShowBudgetsController(this);
+        showBanksController = new ShowBanksController(this);
 
         showExpensesView = new FxmlFileLoader<Pane>(showExpensesController,"/views/ShowExpensesView.fxml");
         showBudgetsView = new FxmlFileLoader<Pane>(showBudgetsController,"/views/ShowBudgetsView.fxml");
+        showBanksView = new FxmlFileLoader<Pane>(showBanksController,"/views/ShowBanksView.fxml");
     }
 
     @Override
@@ -80,6 +87,12 @@ public class MainSceneController implements Initializable{
     public void showBudgetsView() {
 
         mainSceneBorderPane.setCenter(showBudgetsView.getObject());
+
+    }
+
+    public void setShowBanksView() {
+
+        mainSceneBorderPane.setCenter(showBanksView.getObject());
 
     }
 
@@ -115,6 +128,16 @@ public class MainSceneController implements Initializable{
         }
     }
 
+    public void showAddBanksWindow() {
+        if(addBanksWindowController == null || addBanksWindowController.isShowing() == false) {
+            try {
+                addBanksWindowController = new AddBanksWindowController(this);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
     public void addExpenseToDatabase(Expense expense){
         programDatabase.addExpenseToDatabase(expense);
         showExpensesController.setData(programDatabase.getExpensesFromDatabase());
@@ -125,6 +148,11 @@ public class MainSceneController implements Initializable{
     public void addBudgetToDatabase(Budget budget){
         programDatabase.addBudgetToDatabase(budget);
         showBudgetsController.setData(programDatabase.getBudgetsFromDatabase());
+    }
+
+    public void addBankToDatabase(Bank bank){
+        programDatabase.addBankToDatabase(bank);
+        showBanksController.setData(programDatabase.getBanksFromDatabase());
     }
 
 }

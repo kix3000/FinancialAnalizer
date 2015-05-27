@@ -8,8 +8,11 @@ import models.bargains.Expense;
 public class ProgramDatabase {
 
     private MainSceneController mainSceneController;
+
     private ObservableList<Budget> budgetsDatabase;
     private ObservableList<Expense> expensesDatabase;
+    private ObservableList<Bank> bankDatabase;
+    private ObservableList<String> paymentMethods;
 
     public ProgramDatabase(MainSceneController mainSceneController) {
 
@@ -17,6 +20,9 @@ public class ProgramDatabase {
 
         budgetsDatabase = FXCollections.observableArrayList();
         expensesDatabase = FXCollections.observableArrayList();
+        bankDatabase = FXCollections.observableArrayList();
+        paymentMethods = FXCollections.observableArrayList();
+        addPaymentMethodToDatabase("Cash");
 
     }
 
@@ -36,4 +42,25 @@ public class ProgramDatabase {
         return expensesDatabase;
     }
 
+    public void addBankToDatabase(Bank bank) {
+        bankDatabase.add(bank);
+        addPaymentMethodToDatabase(bank.getName() + ": Transfer");
+
+        if(bank.getIsCardPayable()){
+            addPaymentMethodToDatabase(bank.getName() + ": Card");
+        }
+
+    }
+
+    public ObservableList<Bank> getBanksFromDatabase() {
+        return bankDatabase;
+    }
+
+    public ObservableList<String> getPaymentMethodsFromDatabase() {
+        return paymentMethods;
+    }
+
+    private void addPaymentMethodToDatabase(String paymentMethod) {
+        paymentMethods.add(paymentMethod);
+    }
 }

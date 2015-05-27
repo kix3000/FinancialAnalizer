@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<GridPane alignment="CENTER" hgap="10.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml" fx:id="gridPane">
+
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+
+    <Label style="-fx-font: NORMAL 20 Tahoma;" text="Banks" GridPane.columnIndex="0" GridPane.rowIndex="0">
+    </Label>
+
+    <TableView GridPane.columnIndex="0" GridPane.rowIndex="1" fx:id="banksTableView">
+        <columns>
+            <TableColumn text="Bank Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Card Payable">
+                <cellValueFactory>
+                    <PropertyValueFactory property="isCardPayable" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+        <items>
+            <FXCollections fx:factory="observableArrayList" fx:id="banksTableData"/>
+        </items>
+    </TableView>
+
+</GridPane>
