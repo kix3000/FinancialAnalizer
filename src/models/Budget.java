@@ -3,6 +3,8 @@ package models;
 import controllers.MainSceneController;
 import models.bargains.Expense;
 
+import java.time.LocalDate;
+
 public class Budget {
 
     private MainSceneController mainSceneController;
@@ -12,6 +14,9 @@ public class Budget {
     private double plannedExpended;
 
     private String placeFiltr;
+    private String methodPaymentFiltr;
+    private LocalDate startDateFiltr;
+    private LocalDate finishDateFiltr;
 
     public Budget(MainSceneController mainSceneController, String description) {
         this.mainSceneController = mainSceneController;
@@ -36,10 +41,25 @@ public class Budget {
 
         for (Expense expense : mainSceneController.getProgramDatabase().getExpensesFromDatabase()){
 
-            if(placeFiltr == null){
-                totalExpended += expense.getAmount();
+            Boolean placeFiltrMatched = false;
+            Boolean methodPaymentFiltrMatched = false;
+            Boolean startDateFiltrMatched = false;
+            Boolean finishDateFiltrMatched = false;
+
+            if(placeFiltr != null && expense.getPlace().equals(placeFiltr)){
+                placeFiltrMatched = true;
             }
-            else if(placeFiltr != null && expense.getPlace().equals(placeFiltr)){
+            if(methodPaymentFiltr != null && expense.getPaymentMethod().equals(methodPaymentFiltr)){
+                methodPaymentFiltrMatched = true;
+            }
+            if(startDateFiltr != null && expense.getDate().isAfter(startDateFiltr)){
+                startDateFiltrMatched = true;
+            }
+            if(finishDateFiltr != null && expense.getDate().isAfter(finishDateFiltr)){
+                finishDateFiltrMatched = true;
+            }
+
+           if((placeFiltr == null || placeFiltrMatched)&&(methodPaymentFiltr == null || methodPaymentFiltrMatched)&&(startDateFiltr == null || startDateFiltrMatched)&&(finishDateFiltr == null || finishDateFiltrMatched)){
                 totalExpended += expense.getAmount();
             }
 
@@ -50,6 +70,18 @@ public class Budget {
 
     public void setFiltrByPlace(String placeFiltr) {
         this.placeFiltr = placeFiltr;
+    }
+
+    public void setFiltrByMethodPayment(String methodPaymentFiltr){
+        this.methodPaymentFiltr = methodPaymentFiltr;
+    }
+
+    public void setFiltrByStartDate(LocalDate startDateFiltr) {
+        this.startDateFiltr = startDateFiltr;
+    }
+
+    public void setFiltrByFinishDate(LocalDate finishDateFiltr) {
+        this.finishDateFiltr = finishDateFiltr;
     }
 
     public String getFiltrByPlace() {

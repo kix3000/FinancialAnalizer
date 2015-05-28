@@ -6,6 +6,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.collections.*?>
 
 <GridPane xmlns:fx="http://javafx.com/fxml">
 
@@ -21,14 +24,35 @@
     <TextField
             GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="plannedField"/>
 
-    <CheckBox
+    <CheckBox text="Place:"
            GridPane.columnIndex="0" GridPane.rowIndex="2" fx:id="isFiltredByPlaceField"/>
 
     <TextField
             GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="placeFiltrField"/>
 
+    <CheckBox text="Payment Method:"
+              GridPane.columnIndex="0" GridPane.rowIndex="3" fx:id="isFiltredByPaymentMethodField"/>
+
+    <ChoiceBox GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="paymentMethodFiltrField">
+        <items>
+            <FXCollections fx:factory="observableArrayList" fx:id="paymentMethods"/>
+        </items>
+    </ChoiceBox>
+
+    <CheckBox text="Start Date:"
+              GridPane.columnIndex="0" GridPane.rowIndex="4" fx:id="isFiltredByStartDateField"/>
+
+    <DatePicker
+            GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="startDateField"/>
+
+    <CheckBox text="Finish Date:"
+              GridPane.columnIndex="0" GridPane.rowIndex="5" fx:id="isFiltredByFinishDateField"/>
+
+    <DatePicker
+            GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="finishDateField"/>
+
     <HBox spacing="10" alignment="bottom_right"
-          GridPane.columnIndex="1" GridPane.rowIndex="4">
+          GridPane.columnIndex="1" GridPane.rowIndex="6">
         <Button text="Add" fx:id="addBudgetButton"/>
     </HBox>
 

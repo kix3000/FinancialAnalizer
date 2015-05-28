@@ -1,14 +1,15 @@
 package controllers.windowControllers;
 
 import controllers.MainSceneController;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import models.Budget;
 import views.FxmlFileLoader;
+
+import java.time.LocalDate;
 
 public class AddBudgetsWindowController extends Stage {
 
@@ -20,6 +21,14 @@ public class AddBudgetsWindowController extends Stage {
     @FXML private TextField plannedField;
     @FXML private CheckBox isFiltredByPlaceField;
     @FXML private TextField placeFiltrField;
+    @FXML private CheckBox isFiltredByPaymentMethodField;
+    @FXML private ChoiceBox paymentMethodFiltrField;
+    @FXML private CheckBox isFiltredByStartDateField;
+    @FXML private DatePicker startDateField;
+    @FXML private CheckBox isFiltredByFinishDateField;
+    @FXML private DatePicker finishDateField;
+
+    @FXML private ObservableList<String> paymentMethods;
 
     public AddBudgetsWindowController(MainSceneController mainSceneController) throws Exception{
         super();
@@ -31,6 +40,7 @@ public class AddBudgetsWindowController extends Stage {
         this.setOnCloseRequest(e -> this.close());
         this.setScene(addBudgetsWindowView.getScene());
 
+        paymentMethods.addAll(mainSceneController.getProgramDatabase().getPaymentMethodsFromDatabase());
         addBudgetButton.setOnAction( e-> addBudget());
 
         this.show();
@@ -42,12 +52,30 @@ public class AddBudgetsWindowController extends Stage {
         String description = descriptionField.getText();
         Boolean isFiltredByPlace = isFiltredByPlaceField.isSelected();
         String placeFiltr = placeFiltrField.getText();
+        Boolean isFiltredByPaymentMethod = isFiltredByPaymentMethodField.isSelected();
+        String paymentMethodFiltr = (String)paymentMethodFiltrField.getValue();
+        Boolean isFiltredByStartDate = isFiltredByStartDateField.isSelected();
+        LocalDate startDate = startDateField.getValue();
+        Boolean isFiltredByFinishDate = isFiltredByFinishDateField.isSelected();
+        LocalDate finishDate = finishDateField.getValue();
 
         Budget newBudget = new Budget(mainSceneController, description);
         newBudget.setPlannedExpended(planned);
 
         if(isFiltredByPlace) {
             newBudget.setFiltrByPlace(placeFiltr);
+        }
+
+        if(isFiltredByPaymentMethod) {
+            newBudget.setFiltrByMethodPayment(paymentMethodFiltr);
+        }
+
+        if(isFiltredByStartDate){
+            newBudget.setFiltrByStartDate(startDate);
+        }
+
+        if(isFiltredByFinishDate){
+            newBudget.setFiltrByFinishDate(finishDate);
         }
 
         mainSceneController.addBudgetToDatabase(newBudget);
