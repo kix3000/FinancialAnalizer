@@ -1,21 +1,16 @@
 package models.bargains;
 
-import models.BargainDate;
-
-import java.util.Calendar;
-
+import java.time.LocalDate;
 
 public abstract class Payment {
 
-    private BargainDate date;
+    private LocalDate date;
     private double amount;
     private String place;
     private String description;
 
-    public Payment(double amount, String place, String description) {
-        date = new BargainDate();
-        date.set(2015,Calendar.JULY,27);
-
+    public Payment(LocalDate date, double amount, String place, String description) {
+        this.date = date;
         this.amount = amount;
         this.place = place;
         this.description = description;
@@ -25,7 +20,7 @@ public abstract class Payment {
         return description;
     }
 
-    public BargainDate getDate() {
+    public LocalDate getDate() {
         return date;
     }
 

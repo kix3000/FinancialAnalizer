@@ -5,11 +5,14 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import models.bargains.Expense;
 import views.FxmlFileLoader;
+
+import java.time.LocalDate;
 
 public class AddExpensesWindowController extends Stage {
 
@@ -17,6 +20,7 @@ public class AddExpensesWindowController extends Stage {
     private FxmlFileLoader<Pane> addExpensesWindowView;
 
     @FXML private Button addExpenseButton;
+    @FXML private DatePicker dateField;
     @FXML private TextField amountField;
     @FXML private TextField placeField;
     @FXML private TextField descriptionField;
@@ -40,12 +44,13 @@ public class AddExpensesWindowController extends Stage {
 
     private void addExpenseToDatabase() {
 
+        LocalDate date = dateField.getValue();
         double amount = new Double(amountField.getText());
         String place = placeField.getText();
         String description = descriptionField.getText();
         String paymentMethod = (String)paymentMethodField.getValue();
 
-        mainSceneController.addExpenseToDatabase(new Expense(amount,place,paymentMethod,description));
+        mainSceneController.addExpenseToDatabase(new Expense(date, amount,place,paymentMethod,description));
     }
 
 }
