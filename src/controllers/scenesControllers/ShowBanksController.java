@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableView;
 import models.Bank;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class ShowBanksController implements Initializable{
@@ -41,7 +42,7 @@ public class ShowBanksController implements Initializable{
         */
     }
 
-    public void setData(ObservableList<Bank> bank){
+    public void setData(ArrayList<Bank> bank){
         banksTableData.clear();
         banksTableData.addAll(bank);
     }

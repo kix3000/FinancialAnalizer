@@ -19,6 +19,8 @@ import javafx.scene.layout.Pane;
 import models.*;
 import models.bargains.Expense;
 import views.*;
+
+import java.io.Serializable;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -153,30 +155,24 @@ public class MainSceneController implements Initializable{
         }
     }
 
-    public void addAllExpensesToDatabase(ArrayList<Expense> expenses) {
-        for (Expense expense : expenses) {
-            programDatabase.addExpenseToDatabase(expense);
-        }
-
-        showExpensesController.setData(programDatabase.getExpensesFromDatabase());
-
-        showBudgetsController.setData(programDatabase.getBudgetsFromDatabase());
-    }
     public void addExpenseToDatabase(Expense expense){
         programDatabase.addExpenseToDatabase(expense);
-        showExpensesController.setData(programDatabase.getExpensesFromDatabase());
-
-        showBudgetsController.setData(programDatabase.getBudgetsFromDatabase());
+        refreshTables();
     }
 
     public void addBudgetToDatabase(Budget budget){
         programDatabase.addBudgetToDatabase(budget);
-        showBudgetsController.setData(programDatabase.getBudgetsFromDatabase());
+        refreshTables();
     }
 
     public void addBankToDatabase(Bank bank){
         programDatabase.addBankToDatabase(bank);
-        showBanksController.setData(programDatabase.getBanksFromDatabase());
+        refreshTables();
     }
 
+    public void refreshTables(){
+        showExpensesController.setData(programDatabase.getExpensesFromDatabase());
+        showBudgetsController.setData(programDatabase.getBudgetsFromDatabase());
+        showBanksController.setData(programDatabase.getBanksFromDatabase());
+    }
 }

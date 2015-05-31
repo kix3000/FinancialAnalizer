@@ -10,6 +10,8 @@ import javafx.stage.Stage;
 import models.Bank;
 import views.FxmlFileLoader;
 
+import java.io.Serializable;
+
 public class AddBanksWindowController extends Stage {
 
     private MainSceneController mainSceneController;

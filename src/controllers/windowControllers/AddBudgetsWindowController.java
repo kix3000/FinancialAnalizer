@@ -9,9 +9,10 @@ import javafx.stage.Stage;
 import models.Budget;
 import views.FxmlFileLoader;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class AddBudgetsWindowController extends Stage {
+public class AddBudgetsWindowController extends Stage{
 
     private MainSceneController mainSceneController;
     private FxmlFileLoader<Pane> addBudgetsWindowView;

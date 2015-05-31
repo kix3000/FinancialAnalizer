@@ -3,9 +3,10 @@ package models;
 import controllers.MainSceneController;
 import models.bargains.Expense;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Budget {
+public class Budget implements Serializable {
 
     private MainSceneController mainSceneController;
 
@@ -87,4 +88,18 @@ public class Budget {
     public String getFiltrByPlace() {
         return placeFiltr;
     }
+
+    public String getFiltrByMethodPayment(){
+        return methodPaymentFiltr;
+    }
+
+    public LocalDate getFiltrByStartDate() {
+        return startDateFiltr;
+    }
+
+    public LocalDate getFiltrByFinishDate() {
+        return finishDateFiltr;
+    }
+
+
 }

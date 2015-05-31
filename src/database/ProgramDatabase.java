@@ -10,23 +10,23 @@ import models.bargains.Expense;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class ProgramDatabase{
+public class ProgramDatabase implements Serializable{
 
     private MainSceneController mainSceneController;
 
-    private ObservableList<Budget> budgetsDatabase;
+    private ArrayList<Budget> budgetsDatabase;
     private ArrayList<Expense> expensesDatabase;
-    private ObservableList<Bank> bankDatabase;
-    private ObservableList<String> paymentMethods;
+    private ArrayList<Bank> bankDatabase;
+    private ArrayList<String> paymentMethods;
 
     public ProgramDatabase(MainSceneController mainSceneController) {
 
         this.mainSceneController = mainSceneController;
 
-        budgetsDatabase = FXCollections.observableArrayList();
+        budgetsDatabase = new ArrayList<Budget>();
         expensesDatabase = new ArrayList<Expense>();
-        bankDatabase = FXCollections.observableArrayList();
-        paymentMethods = FXCollections.observableArrayList();
+        bankDatabase = new ArrayList<Bank>();
+        paymentMethods =  new ArrayList<String>();
         addPaymentMethodToDatabase("Cash");
 
     }
@@ -35,7 +35,7 @@ public class ProgramDatabase{
         budgetsDatabase.add(budget);
     }
 
-    public ObservableList<Budget> getBudgetsFromDatabase() {
+    public ArrayList<Budget> getBudgetsFromDatabase() {
         return budgetsDatabase;
     }
 
@@ -57,11 +57,11 @@ public class ProgramDatabase{
 
     }
 
-    public ObservableList<Bank> getBanksFromDatabase() {
+    public ArrayList<Bank> getBanksFromDatabase() {
         return bankDatabase;
     }
 
-    public ObservableList<String> getPaymentMethodsFromDatabase() {
+    public ArrayList<String> getPaymentMethodsFromDatabase() {
         return paymentMethods;
     }
 

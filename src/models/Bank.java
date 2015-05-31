@@ -1,6 +1,8 @@
 package models;
 
-public class Bank {
+import java.io.Serializable;
+
+public class Bank implements Serializable{
 
     private String name;
     private Boolean isCardPayable;
