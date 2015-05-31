@@ -8,6 +8,7 @@ import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import models.bargains.Expense;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class ShowExpensesController implements Initializable{
@@ -40,7 +41,7 @@ public class ShowExpensesController implements Initializable{
         });
     }
 
-    public void setData(ObservableList<Expense> ed){
+    public void setData(ArrayList<Expense> ed){
         expensesTableData.clear();
         expensesTableData.addAll(ed);
     }

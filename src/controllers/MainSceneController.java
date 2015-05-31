@@ -1,5 +1,7 @@
 package controllers;
 
+import controllers.fileOperations.OpenOperation;
+import controllers.fileOperations.SaveAsOperation;
 import controllers.scenesControllers.MainBarController;
 import controllers.scenesControllers.ShowBanksController;
 import controllers.scenesControllers.ShowBudgetsController;
@@ -8,7 +10,7 @@ import controllers.windowControllers.AddBanksWindowController;
 import controllers.windowControllers.AddBudgetsWindowController;
 import controllers.windowControllers.AddExpensesWindowController;
 import controllers.windowControllers.ShowExpenseWindowController;
-import javafx.collections.ObservableList;
+import database.ProgramDatabase;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.MenuBar;
@@ -18,6 +20,7 @@ import models.*;
 import models.bargains.Expense;
 import views.*;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 
@@ -74,8 +77,20 @@ public class MainSceneController implements Initializable{
 
     }
 
+    public MainWindowController getMainWindowController() {
+        return mainWindowController;
+    }
+
     public ProgramDatabase getProgramDatabase(){
         return programDatabase;
+    }
+
+    public void openView() {
+        new OpenOperation(this);
+    }
+
+    public void saveAsView(){
+        new SaveAsOperation(this);
     }
 
     public void showExpensesView() {
@@ -138,6 +153,15 @@ public class MainSceneController implements Initializable{
         }
     }
 
+    public void addAllExpensesToDatabase(ArrayList<Expense> expenses) {
+        for (Expense expense : expenses) {
+            programDatabase.addExpenseToDatabase(expense);
+        }
+
+        showExpensesController.setData(programDatabase.getExpensesFromDatabase());
+
+        showBudgetsController.setData(programDatabase.getBudgetsFromDatabase());
+    }
     public void addExpenseToDatabase(Expense expense){
         programDatabase.addExpenseToDatabase(expense);
         showExpensesController.setData(programDatabase.getExpensesFromDatabase());

@@ -12,6 +12,8 @@ public class MainBarController implements Initializable {
 
     private MainSceneController mainSceneController;
 
+    @FXML private MenuItem openMenuItem;
+    @FXML private MenuItem saveAsMenuItem;
     @FXML private MenuItem exitMenuItem;
     @FXML private MenuItem showBudgetsMenuItem;
     @FXML private MenuItem showExpensesMenuItem;
@@ -26,6 +28,10 @@ public class MainBarController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+        openMenuItem.setOnAction( e-> mainSceneController.openView());
+
+        saveAsMenuItem.setOnAction( e-> mainSceneController.saveAsView());
 
         showExpensesMenuItem.setOnAction( e-> mainSceneController.showExpensesView());
 

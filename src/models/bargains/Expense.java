@@ -1,8 +1,9 @@
 package models.bargains;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Expense extends Payment {
+public class Expense extends Payment implements Serializable{
 
     private String paymentMethod;
 

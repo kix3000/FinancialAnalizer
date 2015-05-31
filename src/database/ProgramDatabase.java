@@ -1,16 +1,21 @@
-package models;
+package database;
 
 import controllers.MainSceneController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import models.Bank;
+import models.Budget;
 import models.bargains.Expense;
 
-public class ProgramDatabase {
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class ProgramDatabase{
 
     private MainSceneController mainSceneController;
 
     private ObservableList<Budget> budgetsDatabase;
-    private ObservableList<Expense> expensesDatabase;
+    private ArrayList<Expense> expensesDatabase;
     private ObservableList<Bank> bankDatabase;
     private ObservableList<String> paymentMethods;
 
@@ -19,7 +24,7 @@ public class ProgramDatabase {
         this.mainSceneController = mainSceneController;
 
         budgetsDatabase = FXCollections.observableArrayList();
-        expensesDatabase = FXCollections.observableArrayList();
+        expensesDatabase = new ArrayList<Expense>();
         bankDatabase = FXCollections.observableArrayList();
         paymentMethods = FXCollections.observableArrayList();
         addPaymentMethodToDatabase("Cash");
@@ -38,7 +43,7 @@ public class ProgramDatabase {
         expensesDatabase.add(e);
     }
 
-    public ObservableList<Expense> getExpensesFromDatabase() {
+    public ArrayList<Expense> getExpensesFromDatabase() {
         return expensesDatabase;
     }
 

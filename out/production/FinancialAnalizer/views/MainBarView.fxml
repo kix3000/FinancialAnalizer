@@ -10,9 +10,9 @@
                 <Menu text="File">
                     <items>
                         <MenuItem text="New" />
-                        <MenuItem text="Open"/>
+                        <MenuItem text="Open" fx:id="openMenuItem"/>
                         <MenuItem text="Save"/>
-                        <MenuItem text="Save As"/>
+                        <MenuItem text="Save As" fx:id="saveAsMenuItem"/>
                         <SeparatorMenuItem  />
                         <MenuItem text="Exit" fx:id="exitMenuItem"/>
                     </items>

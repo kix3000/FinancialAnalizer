@@ -1,8 +1,9 @@
 package models.bargains;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public abstract class Payment {
+public abstract class Payment implements Serializable {
 
     private LocalDate date;
     private double amount;
